@@ -55,7 +55,6 @@ namespace activelow.GruntWatchPackage
             Debug.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));
 
             ErrorHandler.ThrowOnFailure(IVsSolution.AdviseSolutionEvents(new SolutionEvents(), out dwCookie));
-            //this.DTE.Events.SolutionEvents.Opened += SolutionEvents_Opened;
 
             base.Initialize();
         }
